@@ -1,0 +1,25 @@
+<h2>ngIf</h2><hr>
+
+<h3 *ngIf="true">If using true or false</h3><hr>
+
+<h3 *ngIf="flag">If using flag</h3><hr>
+
+<h3 *ngIf="flag; else otherPart">If using Condition</h3>
+
+<ng-template #otherPart>
+  <h1>Hello Pune</h1>
+</ng-template><hr>
+
+<h3 *ngIf="flag; then ifBlock; else elseBlock">If using else condition</h3>
+
+<ng-template #ifBlock>
+    <h3>
+       Hello If Block
+    </h3>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h3>
+      Hello Else Block
+  </h3>
+</ng-template>
