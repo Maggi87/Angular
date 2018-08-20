@@ -1,0 +1,19 @@
+<h1>
+  Batch Details
+</h1>
+<table border="1">
+    <thead>
+      <tr>
+        <th>Department Name</th>
+        <th>Fee Amount</th>
+        <th>Division</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of batch">
+        <td>{{v.Name}}</td>
+        <td>{{v.Fees}}</td>
+        <td>{{v.Division}}</td>
+      </tr>
+    </tbody>
+  </table>
