@@ -1,0 +1,16 @@
+
+<h2 class="text-center">Template Driven Form</h2>
+<div class="container">
+  <form>
+    <div class="col-sm-6 col-sm-offset-3">
+      <div class="form-group">
+        <label for="usr">Student Name:</label>
+        <input type="text" class="form-control" required ngModel name="studname" #name="ngModel" id="studname" (change)="LogChange(name)" >
+        <div class="alert alert-danger" *ngIf="!name.valid">Name is Compulsary</div>
+      </div>
+      <div>
+        <button  class="btn btn-info btn-block">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
