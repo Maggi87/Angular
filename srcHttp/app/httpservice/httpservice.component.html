@@ -1,0 +1,21 @@
+
+<h2>Student Details</h2><hr>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Full Name</th>
+      <th>Department</th>
+      <th>Division</th>
+      <th>Fees</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dept of batch.student">
+      <th>{{dept.Name}}</th>
+      <th>{{dept.Department}}</th>
+      <th>{{dept.Division}}</th>
+      <th>{{dept.Fees}}</th>
+    </tr>
+  </tbody>
+</table>

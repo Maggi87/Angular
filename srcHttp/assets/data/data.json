@@ -1,0 +1,9 @@
+{
+    "student": [
+        {"Name":"Dattaprasad Ingle", "Department":"MCA", "Division":"B", "Fees":75000},
+        {"Name":"Sudhakar Patel", "Department":"MCS", "Division":"A", "Fees":65000},
+        {"Name":"Sayali Agawane", "Department":"BE", "Division":"A", "Fees":55000},
+        {"Name":"Sandip Chavan", "Department":"MCS", "Division":"B", "Fees":45000},
+        {"Name":"Kanchi Shaha", "Department":"BE", "Division":"A", "Fees":63000}
+     ]
+}
