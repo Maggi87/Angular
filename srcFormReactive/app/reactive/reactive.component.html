@@ -1,0 +1,36 @@
+
+<h2 class="text-center">Reactive Form</h2>
+<div class="container">
+
+  <div *ngIf="!name; else forminfo" class="form-group">
+    <form [formGroup]="nForm" (ngSubmit)="addPost(nForm.value)">
+      <div class="col-sm-6 col-sm-offset-3">
+
+          <div class="form-group">
+            <label for="usr">Student Name:</label>
+            <input type="text" class="form-control" formControlName="name">
+          </div>
+
+          <div class="form-group">
+              <label for="usr">Student Name:</label>
+              <textarea formControlName="description" cols="20" rows="15" class="form-control"></textarea>
+            </div>
+          <div>
+
+          <button  class="btn btn-info btn-block" [disabled]="!nForm.valid">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+</div>
+
+<ng-template #forminfo>
+  <div class="form-container">
+    <div class="row columns">
+        <h1>Student Name</h1>
+        <h2>{{"Student Name :"+name}}</h2>
+        <h2>{{"Feedback :" +description}}</h2>
+    </div>
+  </div>
+</ng-template>
