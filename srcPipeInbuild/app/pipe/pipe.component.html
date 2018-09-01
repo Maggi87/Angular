@@ -1,0 +1,31 @@
+<h2>Pipe for String</h2>
+
+<h3>{{name}}</h3>
+<h3>{{name | uppercase}}</h3>
+<h3>{{name | titlecase}}</h3>
+<h3>{{name | slice:3}}</h3>
+<h3>{{name | lowercase}}</h3><hr>
+
+<h2>Pipe for JSON Output</h2>
+<h3>
+    {{Institute | json}}
+</h3><hr>
+
+<h2>Pipe for Number</h2>
+<h3>{{no}}</h3>
+<h3>{{no | number : '1.2-3'}}</h3>
+<h3>{{no | number : '3.2-5'}}</h3>
+<h3>{{no | number : '3.4-5'}}</h3>
+<hr>
+
+<h2>Pipe for Currency</h2>
+<h3>{{0.78 | percent}}</h3>
+<h3>{{0.78 | currency}}</h3>
+<h3>{{0.78 | currency: 'INR'}}</h3>
+<hr>
+
+<h2>Pipe for Date</h2>
+<h3>{{today}}</h3>
+<h3>{{today | date: 'short'}}</h3>
+<h3>{{today | date: 'shortDate'}}</h3>
+<h3>{{today | date: 'shortTime'}}</h3>
