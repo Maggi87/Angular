@@ -1,0 +1,10 @@
+{
+    "batch":
+    [
+        {"Name":"PPA","Duration":"6 Month","Fees":9000,"Seat":400},
+        {"Name":"LB","Duration":"4 Month","Fees":7500,"Seat":150},
+        {"Name":"PD","Duration":"2 Month","Fees":5000,"Seat":100},
+        {"Name":"C#","Duration":"2.5 Month","Fees":2500,"Seat":100},
+        {"Name":"Web Development","Duration":"2 Month","Fees":2500,"Seat":200}
+    ]
+}
